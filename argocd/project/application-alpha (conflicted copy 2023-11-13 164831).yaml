@@ -8,13 +8,13 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: argocd-app-delta
+    namespace: argocd-app-alpha
     server: https://kubernetes.default.svc
-  project: project-delta
+  project: project-alpha
   source:
     path: sample
     repoURL: https://github.com/raleev/kubernetes-on-aks.git
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
-	  - CreateNamespace=true
+      - CreateNamespace=true

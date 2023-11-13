@@ -13,7 +13,7 @@ spec:
   project: project-beta
   source:
     path: sample
-    repoURL: https://github.com/foxutech/kubernetes.git
+    repoURL: https://github.com/raleev/kubernetes-on-aks.git
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
